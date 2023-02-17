@@ -42,6 +42,7 @@ public class ProjectController extends ResponseEntityExceptionHandler{
 	//And for none of them return types should be void.
 	public Projects getProjects()
 	{
+		System.out.println("Retrieving project info");
 		logger.info("Returned list of projects");
 		return projectsdao.getAllProjects();
 	}
